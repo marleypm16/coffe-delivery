@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../globalStyle";
+import { theme } from "../../styles/globalStyle";
 
 export const HeaderStyled = styled.header`
     display: flex;
