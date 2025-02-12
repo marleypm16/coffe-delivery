@@ -1,8 +1,8 @@
 import { CoffeInterface } from "../../interface/coffeInterface";
 import cartI from '../../assets/icons/Type=shopping-cart-fill.svg'
-import { Cart, CoffeCard, CoffeCategoryContainer,CoffeCategory, CoffeDescription, CoffeDetails, CoffeTitle, Price, PriceQuantityContainer, Quantity, QuantityContainer } from "./styles";
-import minus from '../../assets/icons/Type=minus-bold.svg'
-import plus from '../../assets/icons/Type=plus-bold.svg'
+import { Cart, CoffeCard, CoffeCategoryContainer,CoffeCategory, CoffeDescription, CoffeDetails, CoffeTitle, Price, PriceQuantityContainer, QuantityContainer } from "./styles";
+import QuantityButton from "../quantityButton/QuantityButton";
+
 interface CoffeProps{
     coffe : CoffeInterface
 }
@@ -22,11 +22,7 @@ function Coffe({coffe} : CoffeProps){
                 <PriceQuantityContainer>
                     <Price>R$ <strong>{coffe.price}</strong></Price>
                     <QuantityContainer>
-                        <Quantity>
-                            <button><img src={minus} alt="Diminuir 1" /></button>
-                            <span>1</span>
-                            <button><img src={plus} alt="Aumentar 1" /></button>
-                        </Quantity>
+                        <QuantityButton/>
                         <Cart>                        
                             <img src={cartI} alt="" />
                         </Cart>
