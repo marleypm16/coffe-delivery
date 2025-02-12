@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyled/>
-      <App/>
+        <App/>
     </ThemeProvider>
 x  </StrictMode>,
 )
