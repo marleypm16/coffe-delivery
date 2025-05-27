@@ -1,12 +1,18 @@
 import { Quantity } from "./styles";
 import minus from '../../assets/icons/Type=minus-bold.svg'
 import plus from '../../assets/icons/Type=plus-bold.svg'
-function QuantityButton() {
+interface QuantityButtonProps {
+  quantity: number;
+  decreaseQuantityProduct: () => void;
+  increaseQuantityProduct: () => void;
+}
+function QuantityButton({quantity,decreaseQuantityProduct,increaseQuantityProduct} : QuantityButtonProps) {
+
   return (
     <Quantity>
-        <button><img src={minus} alt="Diminuir 1" /></button>
-        <span>1</span>
-        <button><img src={plus} alt="Aumentar 1" /></button>
+        <button type="button" disabled={quantity<=1} onClick={decreaseQuantityProduct} ><img src={minus} alt="Diminuir 1" /></button>
+        <span>{quantity}</span>
+        <button type="button" onClick={increaseQuantityProduct}><img src={plus} alt="Aumentar 1" /></button>
     </Quantity>
   );
 }

@@ -30,7 +30,21 @@ export const Local = styled.p`
 
 export const CartButton = styled.button`
     padding: 8px;
+    position: relative;
     border: none;
     border-radius:6px;
+    cursor: pointer;
     background-color: ${theme.colors.yellow.light};
+`
+
+export const CartTotalItems = styled.span`
+    position: absolute;
+    top: -7px;
+    right: -10px;
+    background-color: #b0761b;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 50%;
 `
