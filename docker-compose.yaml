@@ -1,0 +1,7 @@
+services:
+  coffe-delivery-frontend:
+    build: ./
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./src:/usr/src/app/src
