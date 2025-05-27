@@ -41,44 +41,14 @@ Siga os passos abaixo para executar a aplicação:
 
 
 
-## Comandos Úteis do Docker Compose
 
-* **Verificar os logs dos containers:**
-    ```bash
-    docker-compose logs
-    ```
-    Para logs de um serviço específico:
-    ```bash
-    docker-compose logs <NOME_DO_SERVICO>
-    ```
-
-* **Parar os containers (sem remover):**
-    ```bash
-    docker-compose stop
-    ```
-
-* **Parar e remover os containers, redes e volumes definidos no `docker-compose.yml`:**
-    ```bash
-    docker-compose down
-    ```
-    Para remover também os volumes (cuidado, isso apaga os dados persistidos nos volumes):
-    ```bash
-    docker-compose down -v
-    ```
-
-* **Reconstruir as imagens (caso tenha feito alterações nos Dockerfiles):**
-    ```bash
-    docker-compose up -d --build
-    ```
 
 ## Tecnologias Utilizadas (Exemplo)
 
 * **Frontend:** (Ex: HTML, CSS, JavaScript, React, etc.)
 * **Conteinerização:** Docker, Docker Compose
 
-## Autor
 
-[Marley]
 
 ---
 
